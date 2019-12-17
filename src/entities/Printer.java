@@ -1,24 +1,7 @@
 package entities;
 
-public class Printer extends Device {
+public interface Printer {
 	
-	public Printer() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	String print();
 
-	public Printer(String serialNumber) {
-		super(serialNumber);
-		// TODO Auto-generated constructor stub
-	}
-
-	@Override
-	public void processDoc(String doc) {
-		// TODO Auto-generated method stub
-		System.out.println("Printer processing: " + doc);
-	}
-	
-	public String print() {
-		return "Printing document";
-	}
 }
